@@ -25,6 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - uses: actions/test-luke-hinds@main
+      - name: Test Luke Hinds
+        uses: lukehinds/simple-http-action@0.4
         with:
             who-to-greet: 'Luke'
